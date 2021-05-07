@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OnlineShop</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<body style="background-color: #e6e6e5">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.slider');
+            var instance = M.Slider.init(elems, []);
+        });
+
+    </script>
+    <nav>
+        <div class="nav-wrapper" style="background-color: #2c235d">
+
+            <img src="/lib/img/sport.png" style="height:45px;margin-top:10px;margin-right:20px;margin-left:200px" />
+            <a href="#" class="brand-logo">Tech Sport</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">All Items</a></li>
+                <li><a href="badges.html">Login</a></li>
+                <li><a href="collapsible.html" style="margin-right:130px">Registration</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div class="row">
+           
+        </div>
+    </div>
+    <footer class="page-footer" style="background-color: #1e1e1e">
+        <div class="container">
+            <div class="row">
+                <div class="col l6  s3">
+                    <h5 class="white-text " style="margin-right:140px">Tech Sport</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3  " href="#!">Tech Sport.Order items from us</a></li>
+                    </ul>
+                </div>
+                <div class="col  s3">
+                    <h5 class="white-text">Contacts</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!"><strong>Order service</strong></a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">+7 (775) 007 06 69</a></li>
+
+                    </ul>
+                </div>
+                <div class="col s3">
+                    <h5 class="white-text ">FAQ</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3  " href="#!">Feedback</a></li>
+                        <li><a class="grey-text text-lighten-3 " href="#!">About Company</a></li>
+                        <li><a class="grey-text text-lighten-3 " href="#!">Events</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Tech Sport
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

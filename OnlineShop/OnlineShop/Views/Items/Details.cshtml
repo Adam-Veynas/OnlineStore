@@ -1,0 +1,55 @@
+﻿@model OnlineShop.Models.Item
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="row">
+    <div class="col s12 m5">
+        <div class="card-panel teal">
+            <span class="white-text">
+                <h1>Details</h1>
+
+                <div>
+                    <h4>Item</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col s4">
+                            @Html.DisplayNameFor(model => model.name)
+                        </dt>
+                        <dd class="col s8">
+                            @Html.DisplayFor(model => model.name)
+                        </dd>
+                        <dt class="col s4">
+                            @Html.DisplayNameFor(model => model.description)
+                        </dt>
+                        <dd class="col s8">
+                            @Html.DisplayFor(model => model.description)
+                        </dd>
+                        <dt class="col s4">
+                            @Html.DisplayNameFor(model => model.price)
+                        </dt>
+                        <dd class="col s8">
+                            @Html.DisplayFor(model => model.price)
+                        </dd>
+                        <dt class="col s4">
+                            @Html.DisplayNameFor(model => model.added_date)
+                        </dt>
+                        <dd class="col s8">
+                            @Html.DisplayFor(model => model.added_date)
+                        </dd>
+                        <dt class="col s4">
+                            @Html.DisplayNameFor(model => model.Brand)
+                        </dt>
+                        <dd class="col s8">
+                            @Html.DisplayFor(model => model.Brand.name)
+                        </dd>
+                    </dl>
+                </div>
+                <div>
+                    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            </span>
+        </div>
+    </div>
+</div>

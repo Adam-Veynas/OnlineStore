@@ -1,0 +1,33 @@
+﻿@model OnlineShop.Models.User_Role
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="row">
+    <div class="col s12 m5">
+        <div class="card-panel teal" >
+            <span class="white-text">
+                <h4>Details</h4>
+
+                <div>
+                    <h6>User_Role</h6>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col s4">
+                            @Html.DisplayNameFor(model => model.User)
+                        </dt>
+                        <dd class="col s8">
+                            @Html.DisplayFor(model => model.User.Id)
+                        </dd>
+                        <dt class="col s4">
+                            @Html.DisplayNameFor(model => model.Role)
+                        </dt>
+                        <dd class="col s8">
+                            @Html.DisplayFor(model => model.Role.Id)
+                        </dd>
+                    </dl>
+                </div>
+                <div>
+                    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+                    <a asp-action="Index">Back to List</a>
+                </div>

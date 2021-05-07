@@ -1,0 +1,38 @@
+﻿@model OnlineShop.Models.Country
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="row">
+    <div class="col s12 m5">
+        <div class="card-panel teal">
+            <span class="white-text">
+                <h4>Details</h4>
+
+                <div>
+                    <h6>Country</h6>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col s2">
+                            @Html.DisplayNameFor(model => model.name)
+                        </dt>
+                        <dd class="col s10">
+                            @Html.DisplayFor(model => model.name)
+                        </dd>
+                        <dt class="col s2">
+                            @Html.DisplayNameFor(model => model.code)
+                        </dt>
+                        <dd class="col s10">
+                            @Html.DisplayFor(model => model.code)
+                        </dd>
+                    </dl>
+                </div>
+                <div>
+                    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+                    <a asp-action="Index">Back to List</a>
+                </div>
+                </span>
+             </div>
+        </div>
+    </div>
